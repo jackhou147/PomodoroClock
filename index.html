@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, user-scalable=no" />
+        <script src="jquery-3.1.1.min.js"></script>
+        <link rel="stylesheet" href="main.css">
+        <script src="script.js"></script>
+    </head>
+    
+    <body>
+        <h1>Pomodoro Clock</h1>
+        <div id="settings">
+            <div class="settings" id="break_length">
+                <p>BREAK LENGTH</p>
+                <div class="buttons breakSettings">
+                    <div class="minus">-</div>
+                    <div class="length breakLength">5</div>
+                    <div class="plus">+</div>
+                </div>
+                
+            </div>
+            <div class="settings" id="session_length">
+                <p>SESSION LENGTH</p>
+                <div class="buttons sessionSettings">
+                    <div class="minus">-</div>
+                    <div class="length sessionLength">25</div>
+                    <div class="plus">+</div>
+                </div>
+                
+            </div>
+        </div>
+        <div id="clock">
+            <div id="phase">Session</div>
+            <div id="time_left"><span class="min">25</span>:<span class="sec">00</span></div>
+            <div id="ani"></div>
+        </div>
+    </body>
+</html>
