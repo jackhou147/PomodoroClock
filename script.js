@@ -111,7 +111,7 @@ $(document).ready(function(){
                     
                 }else{   //when not 0 minutes left
                     $min.html(Number(minLeft)-1);
-                    $sec.html("5");
+                    $sec.html("59");
                 }
             
             }else {  //when not 0 seconds left
