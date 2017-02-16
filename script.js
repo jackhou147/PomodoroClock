@@ -12,6 +12,7 @@ $(document).ready(function(){
     
     //minus button functions
     $minus.click(function(){
+        $(".sec").html("00");
         $ani.offset({
             top: $clock.offset().top + 300
         })
@@ -44,6 +45,7 @@ $(document).ready(function(){
     
     //plus button functions
     $plus.click(function(){
+        $(".sec").html("00");
         $ani.offset({
             top: $clock.offset().top + 300
         })
@@ -56,6 +58,7 @@ $(document).ready(function(){
             $(".breakLength").html($breakLength+1);
             if(phase == "Break!"){ // if it's break phase
                     $(".min").html($breakLength+1);
+                    
             }
             
         }else if($thisParent.is(".sessionSettings")){ //if sessioinSetting is clicked
@@ -118,9 +121,6 @@ $(document).ready(function(){
                 }else{
                     $sec.html(secLeft-1);
                 }
-                //progress animation
-                
-                //\progress animation
                 
             }
             
